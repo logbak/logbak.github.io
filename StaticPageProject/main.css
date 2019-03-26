@@ -7,6 +7,13 @@ body {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
 }
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
 h1 {
     margin: 0.5em 0 0.5em 0;
     padding: 0;
@@ -38,19 +45,16 @@ hr {
     padding: 0;
     margin: 1.5em 1.5em 0.75em 0.5em;
 }
-.contentWrapper {
-    margin: 0 auto;
-    padding: 0 3.0em;
-}
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
 div.clear { 
     clear:both;
     font-size: 1%;
+}
+  
+@media all and (max-width: 600px) {
+    .bg-overlay p {display: none;}
+    header h1 {font-size: 3em !important; padding-bottom: 1em;}
+    nav li {margin: 0 2px !important;}
+    section#sidebar { width: 100% !important; margin: 0 !important;}
 }
 
 header {
@@ -110,13 +114,16 @@ nav li a, nav li a:visited {
     }
 
 /*Sidebar*/
+@media all and (min-width: 1200px){
+    section#sidebar { width: 20%; }
+}
 section#sidebar {
-    width: 20em;
+    height: 100%;
     float: right;
     position: relative;
     display: block;
     background-color: rgb(34, 34, 34);
-    margin: 0 0 3.0em 1.5em;
+    margin: 0;
     padding: 1.7em 0.5em 2.0em 1.7em;
     color: rgb(228, 228, 227);
     text-align: center;
@@ -124,15 +131,15 @@ section#sidebar {
 section#sidebar img {
     position: center;
     width: 80%;
-    height: 80%;
+    height: 28%;
     border-radius: 50%;
     padding-bottom: 1em;
 }
 
-/*Tiles*/
 section#main {
-    margin: 0 2em 0 6em;
-    padding: 0em 0 2.0em 1.5em;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 2em;
     display: inline-block;
     text-align: center;
    }
@@ -144,7 +151,7 @@ section#main {
 .column {
     flex: 50%;
     padding: 0 4px;
-  } 
+  }
 .column img {
     margin-top: 8px;
     vertical-align: middle;
@@ -157,5 +164,6 @@ footer {
     font-size: 1.2em;
     color: rgb(228, 228, 227);
     text-align: center;
-    padding: 0.5em 2.0em;
+    padding: auto;
+    width: 100%;
 }
