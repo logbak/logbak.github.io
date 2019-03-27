@@ -58,6 +58,12 @@ h5 {
   width: 80px;
 }
 
+#skills .col-sm-4{
+  margin: auto !important;
+  padding-top: 3em !important;
+  text-align: center;
+}
+
 #contact {
     margin-top: 2em !important;
 }
