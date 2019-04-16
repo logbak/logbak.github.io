@@ -43,6 +43,10 @@ html {
     .py-5 {
       padding: 0 !important;
     }
+    .col-sm-4 {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
     .col-sm-2 {
       width: 33%;
       padding: 5%;
@@ -114,11 +118,6 @@ a:active.efa  {
 
 #projects {
   padding-top: 3em;
-}
-
-.col-sm-4 {
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 #contact {
