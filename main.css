@@ -95,6 +95,7 @@ h2 {
 
 a:link.efa {
     color: red;
+    text-decoration: underline;
 }
 a:visited.efa  {
     color: darkred;
@@ -104,6 +105,20 @@ a:hover.efa  {
 }
 a:active.efa  {
     color: darkred;
+}
+
+a:link.ksm {
+    color: #6f9ab4;
+    text-decoration: underline;
+}
+a:visited.ksm  {
+    color: #435e6e;
+}
+a:hover.ksm  {
+    color: #3e3d70;
+}
+a:active.ksm  {
+    color: #435e6e;
 }
 
 #skills h2 {
